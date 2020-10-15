@@ -2,16 +2,40 @@
   font-family: sans-serif;
   text-align: center;
 }
-
-.cardList {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1140px;
+}
+.header {
+  background: white;
+}
+h2 {
+  padding: 10px;
+}
+input[type="text"],
+select {
+  padding: 7px;
+  margin: 10px;
+}
+input[type="text"] {
+  width: 250px;
+}
+.countryList {
   width: 85vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 4px;
 }
 
+.countries {
+  background: #f5f5f5;
+}
 img {
-  width: 130px;
+  width: 135px;
   height: 120px;
 }
 .country {

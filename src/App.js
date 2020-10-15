@@ -62,7 +62,7 @@ class App extends React.Component {
       let filteredRegion = countries.filter((country) =>
         country.region.toLowerCase().includes(selectValue.toLowerCase())
       );
-    
+
       if (selectValue !== "Filter by region") {
         filteredName = filteredRegion.filter((country) =>
           country.name.toLowerCase().includes(searchValue.toLowerCase())
@@ -72,7 +72,10 @@ class App extends React.Component {
     };
 
     return (
-      <div>
+      <div className="countries">
+        <div className="header">
+          <h2>Where is the world?</h2>
+        </div>
         <form onSubmit={this.handleSubmit}>
           <input
             type="text"
