@@ -10,3 +10,6 @@ Use select box to select region ( for example if you select Europe, you should g
 for any country in Europe.   
 -if you select Europe as region and search for the name of country in Asia, it will no showing any country 
 -If you click on country image you can see all details about the country.
+
+
+ How to create a dynamic select element     https://www.pluralsight.com/guides/creating-select-elements-in-reactjs
