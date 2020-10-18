@@ -58,17 +58,22 @@ class App extends React.Component {
     const { countries, selectValue, searchValue } = this.state;
     //filter countries by name
     const filteredData = () => {
-      let filteredName;
+      let filtered;
+      
       let filteredRegion = countries.filter((country) =>
         country.region.toLowerCase().includes(selectValue.toLowerCase())
       );
-
+      let filteredName= countries.filter((country) =>
+      country.name.toLowerCase().includes(searchValue.toLowerCase()));
+      
       if (selectValue !== "Filter by region") {
-        filteredName = filteredRegion.filter((country) =>
+        filtered = filteredRegion.filter((country) =>
           country.name.toLowerCase().includes(searchValue.toLowerCase())
         );
+      }else{
+        filtered= filteredName;
       }
-      return filteredName;
+      return filtered;
     };
 
     return (
