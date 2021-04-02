@@ -1,7 +1,7 @@
 # React-Where-is-the-word
 Created with CodeSandbox
 
-Seacrh country by name or by region challenges on frontendmentor website
+Search country by name or by region challenge on frontendmentor website
 
 https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca
 
